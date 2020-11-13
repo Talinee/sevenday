@@ -1,0 +1,113 @@
+@import '../styles/vars/color' ;
+@import '../styles/vars/font' ;
+
+.TopHeader{
+    position: absolute;
+    width: 100%;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 94.12%;
+    background: $main-color;
+    }
+    .Header{
+    
+    position: absolute;
+    color: #000000;
+    background: #ffffff;
+    height: 64px;
+    width: 100%;
+    left: 0px;
+    top: 4px;
+    border-radius: 0px;
+    }
+    .mb-1{
+    position: absolute;
+    height: 26px;
+left: 94px;
+top: 23px;
+font-family: $main-font;
+font-size: 20px;
+font-style: normal;
+font-weight: 700;
+line-height: 26px;
+letter-spacing: 0px;
+text-align: left;
+
+     color: $main-color;
+    }
+    .home{
+    position: absolute;
+    height: 18px;
+    width: 50px;
+    left: 782px;
+    top: 27px;
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 18px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    }
+    .program{
+        position: absolute;
+    height: 18px;
+    width: 57px;
+    left: 870px;
+    top: 27px;
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    mix-blend-mode: normal;
+    opacity: 0.85;
+    cursor: pointer;
+    }
+    .contact{
+        position: absolute;
+    height: 18px;
+    width: 57px;
+    left: 967px;
+    top: 27px;
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    mix-blend-mode: normal;
+    opacity: 0.85;
+    cursor: pointer;
+    }
+    .retac{
+    position: absolute;
+    height: 32px;
+    width: 1px;
+    left: 1059px;
+    top: 20px;
+    border-radius: 0px;
+    background: rgba(0, 0, 0, 0.14);
+    }
+    .bt-begin{
+        position: absolute;
+    height: 44px;
+    width: 140px;
+    left: 1084px;
+    top: 14px;
+    font-style: normal;
+    font-family: $main-font;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+    background: $main-color;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    border-radius: 8px;
+    cursor: pointer;
+    }
+    
+    

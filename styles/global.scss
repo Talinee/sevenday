@@ -1,4 +1,4 @@
-@import './fonts.scss';
+@import '../styles/font.scss';
 
 html,body {
     height: 100vh;
@@ -15,6 +15,6 @@ html,body {
     height: 44px;
     color:#fff;
     &.bt-regis {
-        background-color: $main-color;
+    background-color: $main-color;
     }
 }

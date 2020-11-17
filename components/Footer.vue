@@ -27,6 +27,140 @@
 </div>
     </div>
 </template>
-<style lang="scss" >
-  @import "./styles/footer.scss";
+<style lang="scss" scoped>
+
+
+.Footer{
+    position: absolute;
+height: 350px;
+width: 100%;
+left: 0px;
+top: 3242px;
+border-radius: 0px;
+background: $main-color;
+}
+.foot-title{
+    position: absolute;
+    height: 24px;
+width: 251px;
+left: 68px;
+top: 63px;
+font-family: $main-font;
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: 24px;
+letter-spacing: 0px;
+text-align: left;
+color: #ffffff;
+}
+.foot-subtitle{
+    position: absolute;
+height: 54px;
+width: 360px;
+left: 68px;
+top: 103px;
+font-family: $main-font;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 18px;
+letter-spacing: 0px;
+text-align: left;
+color: #FFFFFF;
+
+}
+.line{
+    position: absolute;
+    display: flex;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%) ;
+    height: 1px;
+width: 1170px;
+top: 293px;
+border-radius: 0px;
+background: rgba(255, 255, 255, 0.16);
+
+}
+.sec4{
+    position: absolute;
+    height: 16px;
+width: 273px;
+top: 314px;
+font-family: $main-font;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: 16px;
+letter-spacing: 0px;
+text-align: left;
+color: #FFFFFF;
+transform: translate(-50%, -50%) ;
+left: 50%;
+    margin-right: -50%;
+}
+.foot-menu{
+    position: absolute;
+    height: 24px;
+width: 100%;
+left: 805px;
+top: 63px;
+font-family: $main-font;
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: 24px;
+letter-spacing: 0px;
+text-align: left;
+color: #FFFFFF;
+
+}
+
+.website{
+    position: absolute;
+    height: 90px;
+width: 53px;
+left: 805px;
+top: 103px;
+font-family: $main-font;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 18px;
+letter-spacing: 0px;
+text-align: left;
+color:#FFFFFF
+}
+.etc{
+    position: absolute;
+    height: 24px;
+width: 251px;
+left: 995px;
+top: 63px;
+border-radius: nullpx;
+font-family: Sarabun;
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: 24px;
+letter-spacing: 0px;
+text-align: left;
+color: #FFFFFF;
+}
+.foot-etc{
+    position: absolute;
+    height: 90px;
+width: 150px;
+left: 995px;
+top: 103px;
+font-family: $main-font;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 18px;
+letter-spacing: 0px;
+text-align: left;
+color: #FFFFFF;
+}
 </style>

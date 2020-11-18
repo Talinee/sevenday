@@ -14,11 +14,9 @@
                 <div class="banner-sub-tab">
                   เนื้อหาจำลองแบบเรียบๆ ที่ใช้กันในธุรกิจงานพิมพ์
                 </div>
-              </div>
               <div class="banner-icon">
-                <img src="../assets/ic-banner1.svg">
+                <img src="../assets/img/icon.png">
               </div>
-            </div>
             <div class="banner-tab">
                 <div class="banner-tab">
                   ได้ผลจริง
@@ -28,9 +26,8 @@
                 </div>
               </div>
               <div class="banner-icon">
-                <img src="../assets/ic-banner2.svg">
+                <img src="../assets/img/icon1.png">
               </div>
-               <div class="banner-tab">
                 <div class="banner-tab">
                   ทุกที่ทุกเวลา
                 </div>
@@ -39,8 +36,8 @@
                 </div>
               </div>
               <div class="banner-icon">
-                <img src="../assets/ic-banner2.svg">
-              </div>
+                <img src="../assets/img/icon2.png">
+      </div>
       <div class="section-1">
             <div class="sec1-title">
                <title>เปลี่ยนเป็นคุณคนใหม่ใน 7 วัน</title>
@@ -56,7 +53,13 @@
       <div class="section-2">
             <div class="pop-program">
                   โปรแกรมยอดนิยม
-                  <Card/>
+                  <Card
+                     v-for="item in popList"
+                     :key="item.id"
+                     :src="item.img"
+                     :main-message="item.mainMessage"
+                     :sub-message="item.subMessage"
+                     :price="item.price"/>
             </div>
       </div>
        <div class="section-3">
@@ -73,7 +76,7 @@ export default {
   },
   data () {
     return 
-      popprogram: [
+      popList: [
         {
           id: 1,
           img: require('../assets//img/Group 4.png'),
@@ -173,9 +176,15 @@ display: flex;
   justify-content: center;
 border-radius: 6px 6px 0px 0px;
 margin-left: 13%;
-
-
-    }
+}
+.banner-tab{
+      display: flex;
+      flex-direction: column;
+      color:#FFFFFF;
+      font-size: 16px;
+      font-weight: 700;
+      margin-bottom: 5px;
+}
     .section-1{
     position: absolute;
     height: 480px;

@@ -1,5 +1,5 @@
 <template>
-     <a-button class="a-button" type="primary"></a-button>
+     <a-button class="a-button" type="primary">{{textTitle}}</a-button>
 </template>
 <style lang="scss">
 @import '../styles/vars/color' ;
@@ -21,3 +21,13 @@
     background-color: $main-color;
 }
 </style>
+<script>
+export default {
+    props: {
+    textTitle: {
+      type: String,
+      default: null
+    }
+}
+}
+</script>

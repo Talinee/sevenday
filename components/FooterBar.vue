@@ -10,7 +10,9 @@
          <h1 class="foot-menu">เว็ปไซค์</h1>
          <div class="website">
          <nav class="foot-home" href="">หน้าแรก</nav>
+         <br>
          <nav class="foot-program" href="#">โปรแกรม</nav>
+         <br>
          <nav class="foot-contact" href="#">ติดต่อเรา</nav>
          </div>
          <h1 class="etc">อื่นๆ</h1>
@@ -121,7 +123,7 @@ color: #FFFFFF;
     position: absolute;
     height: 90px;
 width: 53px;
-left: 805px;
+margin-left: 805px;
 top: 103px;
 font-family: $main-font;
 font-size: 14px;

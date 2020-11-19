@@ -1,16 +1,19 @@
 <template>
 <div>
-    <div class="TopHeader">
-    </div>
     <div class="Header">
-    <img class="logo" src="../assets/img/logo.png" />
+    <div class="logo-side">
+    <img class="logo" src="../assets/imgs/logo.png" />
     <nav tag="h1" class="mb-1">DAY BETTER YOU</nav>
+    </div>
     <div class="menu">
     <a class="home" href="">หน้าแรก</a>
     <a class="program" href="#">โปรแกรม</a>
     <a class="contact" href="#">ติดต่อเรา</a>
     <div class="button">
-    <Button class="bt-begin">เริ่มโปรแกรม</Button>
+    <Button class="bt-begin"
+    v-for="item in buttonText"
+      :key="item.id"
+      :text-title="item.textTitle"/>
     </div>
     </div>
 </div>
@@ -20,38 +23,35 @@
 @import '../styles/vars/color' ;
 @import '../styles/vars/font' ;
 
-  .TopHeader{
-    position: absolute;
-    width: 100%;
-    bottom: 94.12%;
-    background: $main-color;
-    }
     .Header{
-    position: absolute;
+    // position: absolute;
     color: #000000;
     background: #ffffff;
     height: 64px;
     width: 100%;
-    left: 0px;
-    top: 4px;
+    // left: 0px;
+    // top: 4px;
     border-radius: 0px;
+    border-top: $main-color 4px solid;
+    display: flex;
+    justify-content: space-between;
     }
     .logo{
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    position: absolute;
+    // position: absolute;
     height: 32px;
     width: 32px;
     border-radius: 0px;
-    top: 19px;
+    // top: 19px;
     margin-left:  56px;
     }
     .mb-1{
-    position: absolute;
+    // position: absolute;
     height: 26px;
-    left: 94px;
-    top: 23px;
+    // left: 94px;
+    // top: 23px;
     font-family: $main-font;
     font-size: 20px;
     font-style: normal;
@@ -61,18 +61,24 @@
     text-align: left;
     color: $main-color;
     }
+    .logo-side{
+        display: flex;
+        
+    }
     .menu {
     position: relative;
     float:       right;
 }
 .menu a{
-    padding-top: 23px;
     list-style: none;
     display: inline-block;
     color: #000000;
+    font-size: 14px;
+    font-style: normal;
     font-weight: 400;
-    margin-left: 40px;
-    text-decoration: none;
+    line-height: 18px;
+    padding: 30px;
+
 }
 .button{
     margin-left:  65px;
@@ -83,3 +89,17 @@
 }
 
     </style>
+    <script>
+    import Button from '../components/Button'
+     export default {
+       data(){
+           return{
+            buttonText:[{
+               id:2,
+                textTitle:'เริ่มโปรแกรม'
+              }
+            ]
+           }
+     }
+     }
+    </script>

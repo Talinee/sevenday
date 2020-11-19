@@ -1,10 +1,6 @@
 <template>
-  <div class="gutter-example">
-    <a-row :gutter="16">
-      <a-col class="gutter-row" :span="6">
-        <div class="gutter-box">
-          <a-card hoverable style="width: 240px">
-        <img
+    <a-card hoverable style="width: 280px">
+        <img 
       slot="cover"
       alt="example"
       :src="src"
@@ -12,38 +8,23 @@
     <a-card-meta title="Europe Street beat">
       <template slot="description">
         <p>{{ subMessage }}</p>
-          <p class="price"></p>
+          <p class="price">
             {{ price }}
+            </p>
       </template>
     </a-card-meta>
-  </a-card>
-        </div>
-      </a-col>
-      <a-col class="gutter-row" :span="6">
-        <div class="gutter-box">
-          col-6
-        </div>
-      </a-col>
-      <a-col class="gutter-row" :span="6">
-        <div class="gutter-box">
-          col-6
-        </div>
-      </a-col>
-      <a-col class="gutter-row" :span="6">
-        <div class="gutter-box">
-          col-6
-        </div>
-      </a-col>
-    </a-row>
-  </div>
+          </a-card>
 </template>
-<style lang="scss" scoped>
-.gutter-example >>> .ant-row > div {
-  background: transparent;
-  border: 0;
+<style lang="scss" >
+.ant-card {
+  border-radius: 15px;
 }
-.gutter-box {
-  padding: 5px 0;
+.ant-card-cover img{
+  border-radius: 15px 15px 0 0 ;
+}
+.ant-card-meta-description
+ .price{
+   color: #0AC775;
 }
 </style>
 <script>
@@ -51,11 +32,11 @@ export default {
   props: {
     mainMessage: {
       type: String,
-      default: ' '
+      default: ''
     },
     subMessage: {
       type: String,
-      default: ' '
+      default: ''
     },
     price: {
       type: String,
@@ -63,7 +44,7 @@ export default {
     },
     src: {
       type: String,
-      default: ' '
+      default: ''
     }
   }
 }
